@@ -16,11 +16,8 @@ defmodule JsonFetcher do
     end
   end
 
-  defp parse_json(data) do
-    case data do
-      {:ok, body} ->
-        JSON.decode body
-    end
+  defp parse_json({:ok, body}) do
+    JSON.decode body
   end
 
 end
