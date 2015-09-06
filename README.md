@@ -27,3 +27,14 @@ JsonFetcher.get_url "https://api.github.com/users/bsodmike"
    "type" => "User", "updated_at" => "2015-09-04T04:37:36Z",
    "url" => "https://api.github.com/users/bsodmike"}}
 ```
+
+#### Update: Now with processing of Profile Info
+
+```elixir
+iex(40)> r JsonFetcher
+lib/json_fetcher.ex:1: warning: redefining module JsonFetcher
+{:reloaded, JsonFetcher, [JsonFetcher]}
+iex(41)> JsonFetcher.fetch "https://api.github.com/users/bsodmike"
+bsodmike's Github Info: blog: http://mwdesilva.com, email: michael@mwdesilva.com
+```
+
