@@ -1,0 +1,2 @@
+defmodule JsonFetcher do
+end
